@@ -1,7 +1,7 @@
 # Grantbot
 ## The comic book plot generator
 
-#### By Andy Grossberg (c) 2020
+#### By Andy Grossberg
 
 ## Description
 This program allows a user to create random plots for goofy comic books. The "heroes" can be anyone but the general assumption is they're slackers from my own comic. 
@@ -84,7 +84,7 @@ A project for fun. Rules to follow.
 
 ### License
 
-Copyright (c) 2018 Andy Grossberg
+Copyright (c) 2020 Andy Grossberg
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
