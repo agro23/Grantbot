@@ -13,6 +13,8 @@ A project for fun. Rules to follow.
 ## Specifications
 #### (sample specifications for now)
 
+* test git
+
 * Load a database
 
 * Create Objects for Room, Item, NPCs, PCs
