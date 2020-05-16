@@ -11,7 +11,7 @@ This program allows a user to create random plots for goofy comic books. The "he
 A project for fun. Rules to follow.
 
 ## Specifications
-###(sample specifications for now)
+#### (sample specifications for now)
 
 * Load a database
 
