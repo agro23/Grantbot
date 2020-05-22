@@ -15,55 +15,29 @@ A project for fun. Rules to follow.
 
 * test git
 
-* Load a database
+* add fixed background
 
-* Create Objects for Room, Item, NPCs, PCs
+* add styled divs
 
-* Connect to database
+* Placeholder
+  - EXPECTED INPUT: Placeholder
+  - EXPECTED OUTPUT: Placeholder
 
-* Create GetAll() method for Room
-  - EXPECTED INPUT: Rooms.GetAll()
-  - EXPECTED OUTPUT: Empty List
+* Placeholder
+  - EXPECTED INPUT: Placeholder
+  - EXPECTED OUTPUT: Placeholder
 
-* Create GetAll() method for Item
-  - EXPECTED INPUT: Rooms.GetAll()
-  - EXPECTED OUTPUT: Empty List
+* Placeholder
+  - EXPECTED INPUT: Placeholder
+  - EXPECTED OUTPUT: Placeholder
 
-* Create GetAll() method for NPC
-  - EXPECTED INPUT: Rooms.GetAll()
-  - EXPECTED OUTPUT: Empty List
+* Placeholder
+  - EXPECTED INPUT: Placeholder
+  - EXPECTED OUTPUT: Placeholder
 
-* Test Save and other functions.
-
-* Build a feature to let users Create a Room and populate with:
-  - Items
-  - NPCs
-  - PC(s)
-
-* Build a feature to let users Create an Item and place it:
-  - in a Room
-  - in an NPC inventory
-  - in a PC inventory
-
-* Build a feature to let users Create an NPC, place it in a Room, and give it:
-  - Items
-
-* Build a feature to let users Create a PC, place it in a Room, and give it:
-  - Items
-
-* Create Views
-
-* Refactor code as needed.
-
-**March 5th Update as Dungeon II**
-
-* Add ability to put Item in Room to Item Editor.
-
-* Add Move
-
-* Add Look
-
-* Add Get /Drop
+* Placeholder
+  - EXPECTED INPUT: Placeholder
+  - EXPECTED OUTPUT: Placeholder
 
 ## Setup/Installation Requirements
 
