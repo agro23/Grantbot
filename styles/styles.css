@@ -1,0 +1,30 @@
+/* Set a background image by replacing the URL below */
+body {
+  /* background: url('https://source.unsplash.com/twukN12EN7c/1920x1080') no-repeat center center fixed;  */
+  background-image: url("../images/space-rockets.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment:  fixed;
+  background-size: cover;
+  background-color: #cc0099;
+  /*-webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;*/
+}
+
+.card {
+  background-color: rgba(200,200,200,50);
+  border-style: solid;
+  border-color: #ccfdcc;
+  border-width: 1rem;
+  border-radius: 15%;
+}
+
+.card-body {
+  background-color: rgba(200,200,200,50);
+  border-style: solid;
+  border-color: #ccfdcc;
+  border-width: 1rem;
+  border-radius: 15%;
+}
