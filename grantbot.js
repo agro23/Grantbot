@@ -102,7 +102,7 @@ let myChoices = [
  "in the distant past", "in the recent past", "in a microverse",
  "in another dimension", "in Heaven", "in Hell", "in Limbo",
  "under a rainbow", "in Faerie", "on a train", "on a truck",
- "in a parking garage", "in a scyscraper", "in the Gobi desert",
+ "in a parking garage", "in a skyscraper", "in the Gobi desert",
  "in the Sahara", "in the Mojave", "in the Outback", "in Antarctica",
  "at the North Pole", "in Pelucidar", "in the South Seas",
  "on an unknown island", "on a dark desert highway, cool wind in their hair...",
@@ -141,7 +141,7 @@ while (exit === false) {
   storyString += "Our heroes " + myChoices[0][getRandomNum(myChoices[0].length-1)] + " " + myChoices[1][getRandomNum(myChoices[1].length-1)];
   storyString += " a/an " + myChoices[2][getRandomNum(myChoices[2].length-1)] + " " + myChoices[3][getRandomNum(myChoices[3].length-1)];
   storyString += " with " + myChoices[4][getRandomNum(myChoices[4].length-1)] + " who/m " + myChoices[5][getRandomNum(myChoices[5].length-1)] + ". ";
-  storyString += "\nIt/they is/are " + myChoices[6][getRandomNum(myChoices[6].length-1)] + " our heroes and/but " + myChoices[7][getRandomNum(myChoices[7].length-1)] + " them anyway/how. ";
+  storyString += "\nIt/they is/are " + myChoices[6][getRandomNum(myChoices[6].length-1)] + " our heroes and/but " + myChoices[7][getRandomNum(myChoices[7].length-1)] + " them because of it/anyway/anyhow. ";
   storyString += "\n\nSo, our heroes " + myChoices[0][getRandomNum(myChoices[0].length-1)] + " " + myChoices[1][getRandomNum(myChoices[1].length-1)] + " it/them"; //1, 2
   storyString += " and it/they is/are " +  myChoices[7][getRandomNum(myChoices[7].length-1)] + " our heroes in response. "; // 7
   storyString += "\n\nThe result is our heroes " + myChoices[8][getRandomNum(myChoices[8].length-1)] + " and/or/but it/they " + myChoices[9][getRandomNum(myChoices[9].length-1)] + " regardless. ";
