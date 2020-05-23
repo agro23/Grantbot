@@ -19,6 +19,22 @@ A project for fun. Rules to follow.
 
 * add styled divs
 
+* add generate button (and center it crudely!)
+
+* attach generation function to it
+
+* put the resulting storyString in the target div instead of an alert box.
+
+* fix the copyright. 
+
+* style better
+
+* Better font
+
+* Arrange the type
+
+* Fix the green box
+
 * Placeholder
   - EXPECTED INPUT: Placeholder
   - EXPECTED OUTPUT: Placeholder

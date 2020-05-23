@@ -1,4 +1,7 @@
 /* Set a background image by replacing the URL below */
+
+@import url(http://fonts.googleapis.com/css?family=Special+Elite:400,300,700);
+
 body {
   /* background: url('https://source.unsplash.com/twukN12EN7c/1920x1080') no-repeat center center fixed;  */
   background-image: url("../images/space-rockets.jpg");
@@ -16,15 +19,36 @@ body {
 .card {
   background-color: rgba(200,200,200,50);
   border-style: solid;
-  border-color: #ccfdcc;
+  border-color: #c9fdcc;
   border-width: 1rem;
   border-radius: 15%;
+  padding: 2rem;
 }
 
-.card-body {
-  background-color: rgba(200,200,200,50);
+/* .card-body {
+  /* background-color: rgba(75,200,75,50);
   border-style: solid;
-  border-color: #ccfdcc;
-  border-width: 1rem;
+  border-color: #000000;
+  border-width: .5rem;
   border-radius: 15%;
+} */
+
+.card-body1 {
+  /* background-color: rgba(75,200,75,50); */
+  font-family: 'Special Elite', serif !important;
+  font-size: 24px;
+  background-color: #c9fdcc;
+  /* border-style: solid;
+  border-color: #000000;
+  border-width: .5rem;
+  border-radius: 50%; */
+  padding: 10px;
+}
+
+.myBut {
+  padding: 1rem;
+}
+
+.myText {
+
 }

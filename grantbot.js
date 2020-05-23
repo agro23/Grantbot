@@ -1,8 +1,17 @@
 // grantbot.js
 
 function getRandomNum(max) {
-  return Math.floor(Math.random() * Math.floor(max));
+  return Math.floor(Math.random() * max);
 }
+
+// function testRand() {
+//   let testString = 0;
+//   // for (let i = 0; i < 100; i++) {
+//   //   testString += getRandomNum(11).toString() + " / ";
+//   // }
+//    testString = getRandomNum(11).toString();
+//   return testString;
+// }
 
 let myChoices = [
 // imperatives
@@ -15,22 +24,34 @@ let myChoices = [
   "free", "investigate", "take care of", "own or rent"],
 // a/an adjective
   ["berserk", "homeless", "insane", "lovesick", "warlike", "evil",
-  "horny", "homesick", "lonely", "good", "fey", "shy", "top secret"],
+  "horny", "homesick", "lonely", "good", "fey", "shy", "top secret", "puzzled",
+  "clueless", "hungry", "pernicious", "bored", "confused", "fragile", "voracious",
+  "tone deaf", "undead", "hypnotized", "sleepwalking", "charming", "bespelled",
+  "bedazzled", "idiotic", "mindless", "unleashed", "hellbent", "cruel", "kind"],
 // victim
 ["nazi", "zombie", "cro-magnon", "dinosaur", "group of aliens",
-, "ufo pilot", "alien", "supervillain", "government agent",
-, "government agency", "demon", "angel", "wizard", "virus", "coven",
-, "mad scientist", "ancient warrior", "ghost", "spirits", "faery",
-, "gorilla", "talking ape", "sea monster", "golem", "military officer",
-, "military cabal", "foreign dictator"],
+"ufo pilot", "alien", "supervillain", "government agent",
+"government agency", "demon", "angel", "wizard", "virus", "coven",
+"mad scientist", "ancient warrior", "ghost", "haunt of spirits", "faery",
+"gorilla", "talking ape", "sea monster", "golem", "military officer",
+"military cabal", "foreign dictator", "politician", "service provider",
+"technician", "cable guy", "first responder", "foreign army", "robot", "pirate",
+"ninja", "doctor", "surgeon", "haunted house", "giant bug", "sentient plant",
+"midget kaiju", "kaiju", "zookeeper", "swarm of bees", "nanorobot cloud",
+"AI entity", "super spy", "librarian", "professor", "teacher", "madman",
+"lifelike android"],
 // with characteristic
 ["terrible taste", "poor eyesight", "telekinesis", "super powers",
- "a mind-control sattelite", "an earthquake machine", "good taste",
+ "a mind-control satellite", "an earthquake machine", "good taste",
  "a weather controlling device", "a doomsday device", "weak morals",
  "contagious insanity", "a magical artifact", "implaccable boredom",
  "a fresh grudge", "bad gas", "a breath weapon", "a super weapon",
  "poisonous venom", "laser beam eyes", "superior technology",
- "a death ray", "a big chip on its shoulder", "suicidal ennui"],
+ "a death ray", "a big chip on its shoulder", "suicidal ennui", "a submarine",
+ "an ornithopter", "a dirigibile", "a magic top hat", "a bag of tricks",
+ "a bitchin bazooka",  "boots made for walking", "a magic sword",
+ "a contact high", "a hypnotic gaze", "a sleep spell", "a death wish",
+ "an arcane tome", "a bad reputation", ""],
 // goal
 ["wants to conquer the world", "wants to kill all superheroes",
  "wants to discover Atlantis/Mu", "wants to steal all of earth's x",
@@ -123,8 +144,8 @@ let myChoices = [
 ]; // end of myChoices
 
 /*
-XPRINT "Our heroes " + b$(1) + " " + b$(2); " a/an " + b$(3) + " " + b$(4);
 XPRINT " with " + b$(5) + " who/m " + b$(6) + ". ";
+XPRINT "Our heroes " + b$(1) + " " + b$(2); " a/an " + b$(3) + " " + b$(4);
 PRINT "It/they is/are " + b$(7) + " our heroes and/but " + b$(8) + " them anyway/how. ";
 PRINT "So, our heroes " + b$(11) + " " + b$(12) + " it/them ";
 PRINT " and it/they is/are " + b$(13) + " our heroes in response. ";
@@ -132,22 +153,26 @@ PRINT "The result is our heroes " + b$(9) + " and/or/but it/they " + b$(10); " r
 PRINT "The Action takes place " + location$(RND * 139 + 1) + " and ";
 PRINT location$(RND * 139 + 1) + "."
 */
-let storyString = "";
-let exit = false;
-let x = "n";
-while (exit === false) {
-  // alert("Banana!");
-  storyString = "";
-  storyString += "Our heroes " + myChoices[0][getRandomNum(myChoices[0].length-1)] + " " + myChoices[1][getRandomNum(myChoices[1].length-1)];
-  storyString += " a/an " + myChoices[2][getRandomNum(myChoices[2].length-1)] + " " + myChoices[3][getRandomNum(myChoices[3].length-1)];
-  storyString += " with " + myChoices[4][getRandomNum(myChoices[4].length-1)] + " who/m " + myChoices[5][getRandomNum(myChoices[5].length-1)] + ". ";
-  storyString += "\nIt/they is/are " + myChoices[6][getRandomNum(myChoices[6].length-1)] + " our heroes and/but " + myChoices[7][getRandomNum(myChoices[7].length-1)] + " them because of it/anyway/anyhow. ";
-  storyString += "\n\nSo, our heroes " + myChoices[0][getRandomNum(myChoices[0].length-1)] + " " + myChoices[1][getRandomNum(myChoices[1].length-1)] + " it/them"; //1, 2
-  storyString += " and it/they is/are " +  myChoices[7][getRandomNum(myChoices[7].length-1)] + " our heroes in response. "; // 7
-  storyString += "\n\nThe result is our heroes " + myChoices[8][getRandomNum(myChoices[8].length-1)] + " and/or/but it/they " + myChoices[9][getRandomNum(myChoices[9].length-1)] + " regardless. ";
-  storyString += "\n\nThe action takes place " + myChoices[10][getRandomNum(myChoices[10].length-1)] + " and " + myChoices[10][getRandomNum(myChoices[10].length-1)] +".";
-  x = prompt(storyString + "\n\n\nAnother Y/n");
-  // // let y = prompt("test?");
-  // exit = true;
-  if (x.toUpperCase() === "N") { exit = true; } //else { storyString = ""; }
+function generatePlot() {
+  let storyString = "";
+  let exit = false;
+  let x = "n";
+//  while (exit === false) {
+    // alert("Banana!");
+    storyString = "";
+    storyString += "Our heroes " + myChoices[0][getRandomNum(myChoices[0].length)] + " " + myChoices[1][getRandomNum(myChoices[1].length)];
+    storyString += " a/an " + myChoices[2][getRandomNum(myChoices[2].length)] + " " + myChoices[3][getRandomNum(myChoices[3].length)];
+    storyString += " with " + myChoices[4][getRandomNum(myChoices[4].length)] + " who/m " + myChoices[5][getRandomNum(myChoices[5].length)] + ". ";
+    storyString += "\nIt/they is/are " + myChoices[6][getRandomNum(myChoices[6].length)] + " our heroes and/but " + myChoices[7][getRandomNum(myChoices[7].length)] + " them because of it/anyway/anyhow. ";
+    storyString += "\n\nSo, our heroes " + myChoices[0][getRandomNum(myChoices[0].length)] + " " + myChoices[1][getRandomNum(myChoices[1].length)] + " it/them"; //1, 2
+    storyString += " and it/they is/are " +  myChoices[7][getRandomNum(myChoices[7].length)] + " our heroes in response. "; // 7
+    storyString += "\n\nThe result is our heroes " + myChoices[8][getRandomNum(myChoices[8].length)] + " and/or/but it/they " + myChoices[9][getRandomNum(myChoices[9].length)] + " regardless. ";
+    storyString += "\n\nThe action takes place " + myChoices[10][getRandomNum(myChoices[10].length)] + " and " + myChoices[10][getRandomNum(myChoices[10].length)] +".";
+    // x = prompt(storyString + "\n\n\nAnother Y/n");
+    // // // let y = prompt("test?");
+    // // exit = true;
+    // alert(storyString);
+    // if (x.toUpperCase() === "N") { exit = true; } //else { storyString = ""; }
+    document.getElementById("writeHere").innerHTML = storyString;
+  // }
 }

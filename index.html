@@ -43,17 +43,31 @@
 
     <!-- Page Content -->
     <div class="container">
-      <div class="card border-0 shadow my-5">
+      <div class="card shadow my-5"> <!-- did have border-0 -->
 
         <div class="card-body p-5">
-          <h1 class="font-weight-light">Fixed Full Page Background Image</h1>
-          <p class="lead">In this snippet, the background image is fixed to the body element. Content on the page will scroll, but the image will remain in a fixed position!</p>
-          <p class="lead">Scroll down...</p>
-          <div style="height: 700px"></div>
-          <p class="lead mb-0">You've reached the end!</p>
+          <h1 class="font-weight-light">Welcome to Grantbot!</h1>
+          <div class="lead">
+              <p>The purpose of this program is to generate plots for comics I was trying to write in the 90's.</br>
+              It is named for Grant Morrison because of his inspirational Vertigo <em>Doom Patrol</em> series.</p>
+            </div>
+        <!--p class="lead">Scroll down...</p-->
+          <div style="height: 650px">
+            <!-- this will have to do until I can figure out some better form of centering for the button -->
+            <div class="card-body1 p-3">
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p id="writeHere" class="myText text-justify">&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+            </div>
+            <div class="myBut" align="center"><button type="button" class="btn btn-primary btn-lg" onClick="generatePlot()">generate</button></div>
+          </div>
+          <p class="lead mb-1">Copyright (c) 2020 Andy Grossberg under MIT license I guess</p>
         </div>
       </div>
     </div>
+
   <script type="text/javascript" src="grantbot.js"></script>
   </body>
 </html>
