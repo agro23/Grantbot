@@ -39,7 +39,9 @@ let myChoices = [
 "ninja", "doctor", "surgeon", "haunted house", "giant bug", "sentient plant",
 "midget kaiju", "kaiju", "zookeeper", "swarm of bees", "nanorobot cloud",
 "AI entity", "super spy", "librarian", "professor", "teacher", "madman",
-"lifelike android"],
+"lifelike android", "demigod", "living crystal", "single-celled organism",
+"lizard person", "intelligent pangolin", "talking three-toed tree sloth",
+"slime creature", "animate fungus", "psychedlic mushroom idol"],
 // with characteristic
 ["terrible taste", "poor eyesight", "telekinesis", "super powers",
  "a mind-control satellite", "an earthquake machine", "good taste",
@@ -51,7 +53,7 @@ let myChoices = [
  "an ornithopter", "a dirigibile", "a magic top hat", "a bag of tricks",
  "a bitchin bazooka",  "boots made for walking", "a magic sword",
  "a contact high", "a hypnotic gaze", "a sleep spell", "a death wish",
- "an arcane tome", "a bad reputation", ""],
+ "an arcane tome", "a bad reputation", "a beautiful kite"],
 // goal
 ["wants to conquer the world", "wants to kill all superheroes",
  "wants to discover Atlantis/Mu", "wants to steal all of earth's x",
@@ -62,7 +64,17 @@ let myChoices = [
  "seeks revenge on Earth", "seeks revenge on our heroes",
  "has been ordered to capture/kill our heroes", "likes our heroes",
  "mistakes our boys for real heroes", "errs on the side of caution",
- "is planning the biggest heist of the century"],
+ "is planning the biggest heist of the century", "wants to destroy passers by",
+ "hopes for recognition", "needs a place to stay", "loves attention",
+ "needs a ride", "wants to discover its/their origin", "seeks the moral high ground",
+ "plans to replace world leaders with duplicates", "covets our heroes' freedom",
+ "wants to hoard all of earth's water", "wants to leave this dimension",
+ "wants to get to the other side", "wants to cheat death", "wants to live forever",
+ "wants to stay out of the light", "desires to breach this plane", "lacks energy",
+ "needs to absorb all life force", "needs to balance the scales", "loves the law",
+ "champions chaos on earth", "seeks to destroy all gods", "believes in miracles",
+ "seeks to restore the true faith", "claims to be the messiah"
+],
 // motivation; it is or they are
 ["angry with", "happy about", "sad because of", "pleased by",
  "afraid of", "ready to fight", "succeeding regardless of",
@@ -83,7 +95,7 @@ let myChoices = [
  "run for the hills", "don't bother to do anything", "leave",
  "decide to stay home", "do something else", "go to the store",
  "capture it/them for prosecution", "call other superheroes for help",
- "give in to it's/their demands", "get soundly trounced",
+ "give in to its/their demands", "get soundly trounced",
  "win like champions", "cause more trouble than if they'd stayed home",
  "move to another city", "accidentally kill everyone", "cry like babies",
  "give up and become janitors", "win by accident", "sabotage a fair",
@@ -162,8 +174,8 @@ function generatePlot() {
     storyString = "";
     storyString += "Our heroes " + myChoices[0][getRandomNum(myChoices[0].length)] + " " + myChoices[1][getRandomNum(myChoices[1].length)];
     storyString += " a/an " + myChoices[2][getRandomNum(myChoices[2].length)] + " " + myChoices[3][getRandomNum(myChoices[3].length)];
-    storyString += " with " + myChoices[4][getRandomNum(myChoices[4].length)] + " who/m " + myChoices[5][getRandomNum(myChoices[5].length)] + ". ";
-    storyString += "\nIt/they is/are " + myChoices[6][getRandomNum(myChoices[6].length)] + " our heroes and/but " + myChoices[7][getRandomNum(myChoices[7].length)] + " them because of it/anyway/anyhow. ";
+    storyString += " with " + myChoices[4][getRandomNum(myChoices[4].length)] + " that/who/m " + myChoices[5][getRandomNum(myChoices[5].length)] + ". ";
+    storyString += "\nIt/they is/are " + myChoices[6][getRandomNum(myChoices[6].length)] + " our heroes and/but " + myChoices[7][getRandomNum(myChoices[7].length)] + " them anyway/anyhow/because of it. ";
     storyString += "\n\nSo, our heroes " + myChoices[0][getRandomNum(myChoices[0].length)] + " " + myChoices[1][getRandomNum(myChoices[1].length)] + " it/them"; //1, 2
     storyString += " and it/they is/are " +  myChoices[7][getRandomNum(myChoices[7].length)] + " our heroes in response. "; // 7
     storyString += "\n\nThe result is our heroes " + myChoices[8][getRandomNum(myChoices[8].length)] + " and/or/but it/they " + myChoices[9][getRandomNum(myChoices[9].length)] + " regardless. ";
